@@ -26,7 +26,8 @@ const options = {
       },
     },
   },
-  apis: ["./src/routes/*.js"],
+  // 👈 با استفاده از ** تمام فایل‌های داخل زیرپوشه‌ها (admin و business) به طور خودکار اسکن می‌شوند
+  apis: ["./src/routes/**/*.js"],
 };
 
 const specs = swaggerJsdoc(options);
